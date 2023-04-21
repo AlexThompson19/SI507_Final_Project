@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d6711a9c80facdf375e73c73344cc643 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d6711a9c80facdf375e73c73344cc643" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d6711a9c80facdf375e73c73344cc643 = L.map(
+                "map_d6711a9c80facdf375e73c73344cc643",
+                {
+                    center: [43.621195, -84.682435],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_88b49e9ce8fa4af168f89f0ffd8b185e = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var marker_98e4b4d05aa3c102bf957da698ed8221 = L.marker(
+                [42.41571486, -83.9629333],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_a929459318482d42c3b82b822d20dd6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_98e4b4d05aa3c102bf957da698ed8221.setIcon(icon_a929459318482d42c3b82b822d20dd6e);
+        
+    
+        var popup_d722bf637cdb32cde20609094a212479 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a0acbd3d712d06084a0650d2baf2367 = $(`<div id="html_0a0acbd3d712d06084a0650d2baf2367" style="width: 100.0%; height: 100.0%;">Trail: Pinckney-Losee Lake Trail<br>Type: Park Trail<br>Length: 3.30 miles</div>`)[0];
+                popup_d722bf637cdb32cde20609094a212479.setContent(html_0a0acbd3d712d06084a0650d2baf2367);
+            
+        
+
+        marker_98e4b4d05aa3c102bf957da698ed8221.bindPopup(popup_d722bf637cdb32cde20609094a212479)
+        ;
+
+        
+    
+    
+            var marker_e41539073b807fdb2a00f36072395ca3 = L.marker(
+                [42.34058288, -84.12325626],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_8e078644e86b2cf536e16e308085a5a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e41539073b807fdb2a00f36072395ca3.setIcon(icon_8e078644e86b2cf536e16e308085a5a2);
+        
+    
+        var popup_aec91983d0313f1640935a0fc36aa602 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0650f830cd9fae2ea3dd3198196ffb89 = $(`<div id="html_0650f830cd9fae2ea3dd3198196ffb89" style="width: 100.0%; height: 100.0%;">Trail: Waterloo-Woodland Trail<br>Type: Park Trail<br>Length: 1.00 miles</div>`)[0];
+                popup_aec91983d0313f1640935a0fc36aa602.setContent(html_0650f830cd9fae2ea3dd3198196ffb89);
+            
+        
+
+        marker_e41539073b807fdb2a00f36072395ca3.bindPopup(popup_aec91983d0313f1640935a0fc36aa602)
+        ;
+
+        
+    
+    
+            var marker_e5259892c41bb02f4717340a80871a24 = L.marker(
+                [42.33780463, -84.13141849],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_c364e0d0ea495ea867d729f95407e03a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "campground", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e5259892c41bb02f4717340a80871a24.setIcon(icon_c364e0d0ea495ea867d729f95407e03a);
+        
+    
+        var popup_7bac7b166696fd9be904a9e34739f055 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68575dc745d82b97186d463db20a3402 = $(`<div id="html_68575dc745d82b97186d463db20a3402" style="width: 100.0%; height: 100.0%;">Campground: Waterloo Sugarloaf Lake-Modern<br>Type: ADA, Modern</div>`)[0];
+                popup_7bac7b166696fd9be904a9e34739f055.setContent(html_68575dc745d82b97186d463db20a3402);
+            
+        
+
+        marker_e5259892c41bb02f4717340a80871a24.bindPopup(popup_7bac7b166696fd9be904a9e34739f055)
+        ;
+
+        
+    
+    
+            var marker_147e3bba0893ffb477344f86716d7da6 = L.marker(
+                [42.41496286, -83.9645533],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_ee573631e305b0a3ba7176eff45e1ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_147e3bba0893ffb477344f86716d7da6.setIcon(icon_ee573631e305b0a3ba7176eff45e1ada);
+        
+    
+        var popup_0aa4c646fb0d9b8305cb8d3072151723 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d7e0c1bc874d7587503d33e6b558f7b = $(`<div id="html_9d7e0c1bc874d7587503d33e6b558f7b" style="width: 100.0%; height: 100.0%;">Trail: Pinckney-Silver Lake Trail<br>Type: Park Trail<br>Length: 2.00 miles</div>`)[0];
+                popup_0aa4c646fb0d9b8305cb8d3072151723.setContent(html_9d7e0c1bc874d7587503d33e6b558f7b);
+            
+        
+
+        marker_147e3bba0893ffb477344f86716d7da6.bindPopup(popup_0aa4c646fb0d9b8305cb8d3072151723)
+        ;
+
+        
+    
+    
+            var marker_5fdf13d092ddf4836c358a229ec44bdf = L.marker(
+                [42.41699786, -83.9641673],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_fc4f1fdcaa23b46f7ac89ed1bbbae168 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_5fdf13d092ddf4836c358a229ec44bdf.setIcon(icon_fc4f1fdcaa23b46f7ac89ed1bbbae168);
+        
+    
+        var popup_a64361b3145341aa0580342512ff495e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_820edd7123af71fdf110b35b7172c76f = $(`<div id="html_820edd7123af71fdf110b35b7172c76f" style="width: 100.0%; height: 100.0%;">Trail: Pinckney-Crooked Lake Trail<br>Type: Park Trail<br>Length: 5.10 miles</div>`)[0];
+                popup_a64361b3145341aa0580342512ff495e.setContent(html_820edd7123af71fdf110b35b7172c76f);
+            
+        
+
+        marker_5fdf13d092ddf4836c358a229ec44bdf.bindPopup(popup_a64361b3145341aa0580342512ff495e)
+        ;
+
+        
+    
+    
+            var marker_673ca20e64ddb4ae029666a0e528ec21 = L.marker(
+                [42.40705186, -83.9608193],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_276fcfa9f149085d817222cadd7b888f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "campground", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_673ca20e64ddb4ae029666a0e528ec21.setIcon(icon_276fcfa9f149085d817222cadd7b888f);
+        
+    
+        var popup_0282cf56439a271f609dd885f1afda2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dc32ea1fab5e91d33c377d7843ee252 = $(`<div id="html_0dc32ea1fab5e91d33c377d7843ee252" style="width: 100.0%; height: 100.0%;">Campground: Pinckney-Crooked Lake Rustic<br>Type: Rustic</div>`)[0];
+                popup_0282cf56439a271f609dd885f1afda2c.setContent(html_0dc32ea1fab5e91d33c377d7843ee252);
+            
+        
+
+        marker_673ca20e64ddb4ae029666a0e528ec21.bindPopup(popup_0282cf56439a271f609dd885f1afda2c)
+        ;
+
+        
+    
+    
+            var marker_018fcbb9b140a42636be7ad815fa4151 = L.marker(
+                [42.41496286, -83.9645533],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_6148df174883c08145d74a060b4a7a07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_018fcbb9b140a42636be7ad815fa4151.setIcon(icon_6148df174883c08145d74a060b4a7a07);
+        
+    
+        var popup_f0e900cc9f08b2b4e32690c79406d702 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa410a17ef080d68720fdcfecfc87fc5 = $(`<div id="html_fa410a17ef080d68720fdcfecfc87fc5" style="width: 100.0%; height: 100.0%;">Trail: Pinckney-Potawatomi Trail<br>Type: Park Trail<br>Length: 17.40 miles</div>`)[0];
+                popup_f0e900cc9f08b2b4e32690c79406d702.setContent(html_fa410a17ef080d68720fdcfecfc87fc5);
+            
+        
+
+        marker_018fcbb9b140a42636be7ad815fa4151.bindPopup(popup_f0e900cc9f08b2b4e32690c79406d702)
+        ;
+
+        
+    
+    
+            var marker_d560a0f96a990167ab06fef20599f73d = L.marker(
+                [42.40705186, -83.9608193],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_951d08c12ecaa21deacf798d8ff3f474 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "campground", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d560a0f96a990167ab06fef20599f73d.setIcon(icon_951d08c12ecaa21deacf798d8ff3f474);
+        
+    
+        var popup_d5705d408b51cb82c5faabfcbbe286b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccf2ea0c0d2c0c157b40d603bc1791c1 = $(`<div id="html_ccf2ea0c0d2c0c157b40d603bc1791c1" style="width: 100.0%; height: 100.0%;">Campground: Pinckney-Crooked Lake Rustic<br>Type: Rustic</div>`)[0];
+                popup_d5705d408b51cb82c5faabfcbbe286b0.setContent(html_ccf2ea0c0d2c0c157b40d603bc1791c1);
+            
+        
+
+        marker_d560a0f96a990167ab06fef20599f73d.bindPopup(popup_d5705d408b51cb82c5faabfcbbe286b0)
+        ;
+
+        
+    
+    
+            var marker_aa404b06c17f4d014522c404b7a18d8c = L.marker(
+                [42.41226286, -84.02026628],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_56da7c0f704fd16b51419c47f57ae5cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "campground", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aa404b06c17f4d014522c404b7a18d8c.setIcon(icon_56da7c0f704fd16b51419c47f57ae5cb);
+        
+    
+        var popup_d8338cd1c7ad8e865ad446a72c7e2a53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10375a659a019e15d47777c094f3fd89 = $(`<div id="html_10375a659a019e15d47777c094f3fd89" style="width: 100.0%; height: 100.0%;">Campground: Pinckney-Blind Lake Rustic Hike-in<br>Type: Rustic</div>`)[0];
+                popup_d8338cd1c7ad8e865ad446a72c7e2a53.setContent(html_10375a659a019e15d47777c094f3fd89);
+            
+        
+
+        marker_aa404b06c17f4d014522c404b7a18d8c.bindPopup(popup_d8338cd1c7ad8e865ad446a72c7e2a53)
+        ;
+
+        
+    
+    
+            var marker_76200292370f1f122fd8cb2bd6e635a2 = L.marker(
+                [42.42586387, -84.00380974],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_2a685ceb471f1719913d784c58026052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "campground", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_76200292370f1f122fd8cb2bd6e635a2.setIcon(icon_2a685ceb471f1719913d784c58026052);
+        
+    
+        var popup_4cf7f40beb2c9bd4e074ef7a1d6c92ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a57d6fa293b4f1c88af41665f910a179 = $(`<div id="html_a57d6fa293b4f1c88af41665f910a179" style="width: 100.0%; height: 100.0%;">Campground: Pinckney-Glenbrook Yurt<br>Type: ADA, Yurt</div>`)[0];
+                popup_4cf7f40beb2c9bd4e074ef7a1d6c92ec.setContent(html_a57d6fa293b4f1c88af41665f910a179);
+            
+        
+
+        marker_76200292370f1f122fd8cb2bd6e635a2.bindPopup(popup_4cf7f40beb2c9bd4e074ef7a1d6c92ec)
+        ;
+
+        
+    
+    
+            var marker_02d11fab50976868ffc7f23d7b13c9ed = L.marker(
+                [42.374051, -84.078516],
+                {}
+            ).addTo(map_d6711a9c80facdf375e73c73344cc643);
+        
+    
+            var icon_3233a95100e7a4463f861c4b398bad3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_02d11fab50976868ffc7f23d7b13c9ed.setIcon(icon_3233a95100e7a4463f861c4b398bad3b);
+        
+    
+        var popup_0a67e3fd23d7c21dfacc0e546a42b94a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ea1e1d0150cacecec54c3b6c72e213a = $(`<div id="html_6ea1e1d0150cacecec54c3b6c72e213a" style="width: 100.0%; height: 100.0%;">Trail: Waterloo-DTE Energy Foundation Trail <br>Type: Park Trail<br>Length: 10.00 miles</div>`)[0];
+                popup_0a67e3fd23d7c21dfacc0e546a42b94a.setContent(html_6ea1e1d0150cacecec54c3b6c72e213a);
+            
+        
+
+        marker_02d11fab50976868ffc7f23d7b13c9ed.bindPopup(popup_0a67e3fd23d7c21dfacc0e546a42b94a)
+        ;
+
+        
+    
+</script>
+</html>
