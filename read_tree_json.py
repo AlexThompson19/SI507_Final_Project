@@ -1,6 +1,30 @@
 import json
 
 class TreeNode:
+    """
+    This module contains a class TreeNode and two functions dict_to_tree and read_tree_from_json.
+
+    TreeNode represents a node in a tree data structure, where each node has a data field and
+    a list of children.
+    It has an add_child method to add a child to the list of children, and a display
+    method to print the node and its children in a readable format.
+
+    dict_to_tree is a recursive function that takes in a dictionary representing a tree,
+    creates a TreeNode object with the data from the dictionary, and adds its children
+    by recursively calling dict_to_tree on each child dictionary.
+
+    read_tree_from_json is a function that takes in the name of a JSON file, reads the
+    contents of the file, and converts it to a dictionary using the json.load function.
+    It then calls dict_to_tree to create a tree structure from the dictionary, and returns
+    the root node of the tree.
+
+    To use this module, import it and call read_tree_from_json with the name of a JSON
+    file containing the tree data. The function will return the root node of the tree,
+    which can be used to navigate the tree structure using the methods of the TreeNode class.
+
+    Input the name of a json file to examine the tree.
+    """
+
     def __init__(self, data):
         self.data = data
         self.children = []
