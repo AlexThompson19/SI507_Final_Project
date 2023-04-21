@@ -35,3 +35,31 @@ It also provides the ability to filter the map based on a specific county.
 6. The notebook will generate and save an interactive map named "michigan_map.html" and a map filtered by county named "{county}_name_map.html", with {county} being whatever county you specify in 'county_name'.
 
 7. Click on the specific map ("michigan_map.html" or "{county}_name_map.html") to view an interactive map of Michigan trails and campgrounds or a specific county's trails and campgrounds.
+
+## Data Structure
+
+The data structure used in this project is a tree, which represents the hierarchical organization of Michigan's counties, trails, campgrounds, and features.
+
+### Tree Structure
+
+The tree structure is composed of nodes, where each node has a `data` attribute and a list of `children`. The `data` attribute holds the information for a specific entity, such as a county, trail, campground, or feature. The `children` attribute is a list of child nodes under the current node.
+
+Here's the hierarchy of the tree structure:
+
+1. Michigan (root node)
+   - County
+     - Trail
+       - Campground
+         - Feature
+
+The tree is constructed using the `TreeNode` class in the Jupyter Notebook file (si507_Final_Project.ipynb), and it's built using the data from the XML files.
+
+### Saving and Loading Tree Structure
+
+The tree structure is saved as a JSON file named "michigan_tree.json" using the `tree_to_dict` function in the Jupyter Notebook file (si507_Final_Project.ipynb). This function converts the tree structure into a nested dictionary format that can be saved as a JSON file.
+
+To load the JSON file and reconstruct the tree, the `dict_to_tree` function is used. This function reads the JSON file and converts the nested dictionary back into a tree structure using the `TreeNode` class.
+
+### Interacting with the Tree Structure
+
+The tree structure can be traversed and filtered to access specific data or generate maps based on the selected criteria, such as filtering data by county.
