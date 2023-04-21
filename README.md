@@ -16,16 +16,15 @@ It also provides the ability to filter the map based on a specific county.
   pip install xmltodict pandas numpy folium
 
 2. Ensure the following XML files are in the same directory as the Python script:
-
-- Campground.XML
-- CampingFeaturesOptions.XML
-- CampingTrailAssoc.XML
-- County.XML
-- Features.XML
-- Trail.XML
-- TrailCounties.XML
-- TrailFeaturesOptions.XML
-- TrailSurface.XML
+    - Campground.XML
+    - CampingFeaturesOptions.XML
+    - CampingTrailAssoc.XML
+    - County.XML
+    - Features.XML
+    - Trail.XML
+    - TrailCounties.XML
+    - TrailFeaturesOptions.XML
+    - TrailSurface.XML
 
 3. Open the Jupyter Notebook file (si507_Final_Project.ipynb) using Jupyter Notebook, Jupyter Lab, or VSStudioCode.
 
