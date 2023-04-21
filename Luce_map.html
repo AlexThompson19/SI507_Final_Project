@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2af97d4805572d9ce1da9e40677342b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2af97d4805572d9ce1da9e40677342b1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2af97d4805572d9ce1da9e40677342b1 = L.map(
+                "map_2af97d4805572d9ce1da9e40677342b1",
+                {
+                    center: [43.621195, -84.682435],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_26458a3508ce8dc6492bb5091ccc7f80 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2af97d4805572d9ce1da9e40677342b1);
+        
+    
+            var marker_388e2b5f691b8a1c74d10e917d339797 = L.marker(
+                [46.27735324, -85.48887302],
+                {}
+            ).addTo(map_2af97d4805572d9ce1da9e40677342b1);
+        
+    
+            var icon_18a7a2c934d9931a9675b0199cae249d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_388e2b5f691b8a1c74d10e917d339797.setIcon(icon_18a7a2c934d9931a9675b0199cae249d);
+        
+    
+        var popup_77fcbf30b52e5d1f6db04174ffa099c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3601faba431765a04552585c168aca75 = $(`<div id="html_3601faba431765a04552585c168aca75" style="width: 100.0%; height: 100.0%;">Trail: Canada Lakes Pathway<br>Type: Forest Pathway<br>Length: 14.00 miles</div>`)[0];
+                popup_77fcbf30b52e5d1f6db04174ffa099c6.setContent(html_3601faba431765a04552585c168aca75);
+            
+        
+
+        marker_388e2b5f691b8a1c74d10e917d339797.bindPopup(popup_77fcbf30b52e5d1f6db04174ffa099c6)
+        ;
+
+        
+    
+    
+            var marker_04383d713ab50913b8427740c3a863bc = L.marker(
+                [46.67806325, -85.62783131],
+                {}
+            ).addTo(map_2af97d4805572d9ce1da9e40677342b1);
+        
+    
+            var icon_d433d09cc00dc5c355897f141bc18666 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_04383d713ab50913b8427740c3a863bc.setIcon(icon_d433d09cc00dc5c355897f141bc18666);
+        
+    
+        var popup_28f7742ddf4c83ec33d7957eab4f7b28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f00253ab710b031368ea43e9a741dbb = $(`<div id="html_3f00253ab710b031368ea43e9a741dbb" style="width: 100.0%; height: 100.0%;">Trail: Muskallonge-Hiking Trail<br>Type: Park Trail<br>Length: 1.50 miles</div>`)[0];
+                popup_28f7742ddf4c83ec33d7957eab4f7b28.setContent(html_3f00253ab710b031368ea43e9a741dbb);
+            
+        
+
+        marker_04383d713ab50913b8427740c3a863bc.bindPopup(popup_28f7742ddf4c83ec33d7957eab4f7b28)
+        ;
+
+        
+    
+    
+            var marker_0d317e93303754ac7963734f9404e9f4 = L.marker(
+                [46.67571096, -85.63102189],
+                {}
+            ).addTo(map_2af97d4805572d9ce1da9e40677342b1);
+        
+    
+            var icon_be4e7f668571c663775fd90d86172249 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "campground", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_0d317e93303754ac7963734f9404e9f4.setIcon(icon_be4e7f668571c663775fd90d86172249);
+        
+    
+        var popup_cf70710ae5988f0851a1aec4396e1477 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e1ac558c1ffc96f8a36e42009203449 = $(`<div id="html_7e1ac558c1ffc96f8a36e42009203449" style="width: 100.0%; height: 100.0%;">Campground: Muskallonge Lake-Modern<br>Type: Modern</div>`)[0];
+                popup_cf70710ae5988f0851a1aec4396e1477.setContent(html_7e1ac558c1ffc96f8a36e42009203449);
+            
+        
+
+        marker_0d317e93303754ac7963734f9404e9f4.bindPopup(popup_cf70710ae5988f0851a1aec4396e1477)
+        ;
+
+        
+    
+    
+            var marker_38c9c661892f47b4cad401ae8ebf6544 = L.marker(
+                [46.67006243, -85.76150291],
+                {}
+            ).addTo(map_2af97d4805572d9ce1da9e40677342b1);
+        
+    
+            var icon_c3bc71b79bc3bfdd39cc27be6864040b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_38c9c661892f47b4cad401ae8ebf6544.setIcon(icon_c3bc71b79bc3bfdd39cc27be6864040b);
+        
+    
+        var popup_12f149b0697400f5c80802855e4f136d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68fef74d231b23e7a917ae5e91bf1262 = $(`<div id="html_68fef74d231b23e7a917ae5e91bf1262" style="width: 100.0%; height: 100.0%;">Trail: Blind Sucker Pathway<br>Type: Forest Pathway<br>Length: 7.30 miles</div>`)[0];
+                popup_12f149b0697400f5c80802855e4f136d.setContent(html_68fef74d231b23e7a917ae5e91bf1262);
+            
+        
+
+        marker_38c9c661892f47b4cad401ae8ebf6544.bindPopup(popup_12f149b0697400f5c80802855e4f136d)
+        ;
+
+        
+    
+    
+            var marker_9b205dae09cf783ae518e126537e5c66 = L.marker(
+                [46.624681, -85.6031617],
+                {}
+            ).addTo(map_2af97d4805572d9ce1da9e40677342b1);
+        
+    
+            var icon_8ba5ea1688858a9a618fe1fab4d42ed3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9b205dae09cf783ae518e126537e5c66.setIcon(icon_8ba5ea1688858a9a618fe1fab4d42ed3);
+        
+    
+        var popup_33fbc50a74fa9259fa6c1b036f48eb44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e036a2eb6454dcaa624509f646ae5a32 = $(`<div id="html_e036a2eb6454dcaa624509f646ae5a32" style="width: 100.0%; height: 100.0%;">Trail: Headquarters Lake Equestrian Trails<br>Type: Forest Pathway<br>Length: 25.00 miles</div>`)[0];
+                popup_33fbc50a74fa9259fa6c1b036f48eb44.setContent(html_e036a2eb6454dcaa624509f646ae5a32);
+            
+        
+
+        marker_9b205dae09cf783ae518e126537e5c66.bindPopup(popup_33fbc50a74fa9259fa6c1b036f48eb44)
+        ;
+
+        
+    
+</script>
+</html>
